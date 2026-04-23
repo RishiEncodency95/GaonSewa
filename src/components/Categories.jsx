@@ -4,12 +4,12 @@ import cowMilk from "../assets/product-cow-milk.jpg";
 import tofu from "../assets/product-tofu.jpg";
 
 const Categories = () => (
-  <section className="container-px mx-auto max-w-7xl py-12 lg:py-20">
+  <section className="w-full px-6 lg:px-12 py-4 lg:py-8">
     <div className="grid gap-6 lg:grid-cols-2">
       {/* Dairy Category */}
       <Link
         to="/products"
-        className="group relative overflow-hidden rounded-[2.5rem] bg-emerald-600 p-8 lg:p-12 transition-spring hover:shadow-lg"
+        className="group relative overflow-hidden rounded-lg bg-emerald-600 p-2 lg:px-6 lg:py-4 transition-spring hover:shadow-lg"
       >
         <div className="relative z-10 flex h-full flex-col justify-between">
           <div>
@@ -43,7 +43,7 @@ const Categories = () => (
       {/* Plant Category */}
       <Link
         to="/products"
-        className="group relative overflow-hidden rounded-[2.5rem] bg-yellow-400 p-8 lg:p-12 transition-spring hover:shadow-lg"
+        className="group relative overflow-hidden rounded-lg bg-yellow-400 p-2 lg:px-6 lg:py-4 transition-spring hover:shadow-lg"
       >
         <div className="relative z-10 flex h-full flex-col justify-between">
           <div>

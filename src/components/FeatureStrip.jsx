@@ -8,12 +8,12 @@ const features = [
 ];
 
 const FeatureStrip = () => (
-  <section className="container-px relative z-50 mx-auto -mt-12 max-w-6xl lg:-mt-20">
-    <div className="grid grid-cols-1 gap-px overflow-hidden rounded-3xl bg-yellow-400 shadow-[0_20px_50px_rgba(234,179,8,0.3)] sm:grid-cols-2 lg:grid-cols-4">
+  <section className="lg:px-10 relative z-50">
+    <div className="grid grid-cols-1 gap-px overflow-hidden rounded-md bg-yellow-400 shadow-[0_20px_50px_rgba(234,179,8,0.3)] sm:grid-cols-2 lg:grid-cols-4">
       {features.map((f, i) => (
         <div
           key={f.title}
-          className="group flex items-center justify-center gap-5 bg-yellow-400 p-8 transition-all hover:bg-yellow-500 border-r border-yellow-950/10 last:border-0"
+          className="group flex items-center justify-center gap-5 bg-yellow-400 p-6 transition-all hover:bg-yellow-500 border-r border-yellow-950/10 last:border-0"
         >
           <div className="grid h-16 w-16 shrink-0 place-items-center rounded-full bg-white/20 border-2 border-white/30 transition-all group-hover:scale-110 group-hover:bg-white/30">
             <f.icon className="h-7 w-7 text-yellow-950" strokeWidth={2.4} />

@@ -46,8 +46,8 @@ const Navbar = () => {
               <NavLink
                 to={l.href}
                 className={({ isActive }) => cn(
-                  "rounded-full px-4 py-2 text-sm font-medium transition-smooth hover:bg-emerald-50 hover:text-emerald-800",
-                  isActive ? "bg-emerald-50 text-emerald-800 " : "text-slate-600 hover:text-slate-900 "
+                  "rounded-full px-4 py-2 text-sm font-semibold transition-smooth hover:bg-emerald-50 hover:text-emerald-800",
+                  isActive ? "bg-emerald-50 text-emerald-800 " : "text-gray-900 hover:text-slate-900 "
                 )}
               >
                 {l.label}
@@ -66,7 +66,7 @@ const Navbar = () => {
               3
             </span>
           </button>
-          
+
           <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-semibold transition-smooth bg-emerald-600 text-white hover:bg-emerald-700 shadow-soft h-9 px-4 hidden sm:inline-flex hover:shadow-glow hover:-translate-y-0.5">
             <User className="h-4 w-4" /> Login
           </button>
