@@ -25,19 +25,17 @@ const Navbar = () => {
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-50 transition-smooth",
-        scrolled ? "bg-slate-50/85 backdrop-blur-xl shadow-soft" : "bg-transparent"
+        "sticky top-0 z-50 transition-smooth overflow-visible",
+        scrolled ? "bg-slate-50/95 backdrop-blur-xl shadow-soft" : "bg-white shadow-sm"
       )}
     >
-      <nav className="container-px mx-auto flex h-20 max-w-7xl items-center justify-between">
-        <Link to="/" className="flex items-center gap-2.5">
-          <span className="grid h-11 w-11 place-items-center rounded-2xl bg-gradient-leaf shadow-glow">
-            <Milk className="h-5 w-5 text-white" strokeWidth={2.4} />
-          </span>
-          <span className="flex flex-col leading-none">
-            <span className="font-display text-xl text-slate-900">Gaon Fresh</span>
-            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-emerald-600">Dairy Co.</span>
-          </span>
+      <nav className="w-full px-16 flex h-14 items-center justify-between">
+        <Link to="/" className="flex items-center relative z-10">
+          <img
+            src="/log.png"
+            alt="Gaon Fresh"
+            className="w-20 h-20 translate-y-2 drop-shadow-md"
+          />
         </Link>
 
         <ul className="hidden items-center gap-1 lg:flex">
