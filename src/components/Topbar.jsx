@@ -16,7 +16,7 @@ const Topbar = () => {
       `}</style>
 
             <div className="bg-[#02225E] border-b border-white/[0.07] font-sans">
-                <div className="flex items-center justify-between h-10 w-full px-16">
+                <div className="flex items-center justify-between h-10 w-full px-12">
 
                     {/* Contact Info */}
                     <div className="flex items-center gap-5">
